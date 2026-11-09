@@ -1,0 +1,20 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  restaurantdb_url: "jdbc:postgresql://172.17.0.5:5432/restaurantdb"
+  foodcataloguedb_url: "jdbc:postgresql://172.17.0.5:5432/foodcatalogue"
+  userdb_url: "jdbc:postgresql://172.17.0.5:5432/userinfo"
+  eureka_service_address: "http://eureka-0.eureka-service.default.svc.cluster.local:8761/eureka/"
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  restaurantdb_url: "jdbc:postgresql://172.17.0.5:5432/restaurantdb"
+  foodcataloguedb_url: "jdbc:postgresql://172.17.0.5:5432/foodcatalogue"
+  userdb_url: "jdbc:postgresql://172.17.0.5:5432/userinfo"
+  eureka_service_address: "http://eureka-0.eureka-service.default.svc.cluster.local:8761/eureka/"
